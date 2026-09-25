@@ -1,11 +1,11 @@
 [Rule]
 # Google Voice 核心 Web 与专用 API 端点
-DOMAIN, voice.google.com
-DOMAIN, voice-pa.googleapis.com
-DOMAIN, telephony-pa.googleapis.com
+DOMAIN,voice.google.com
+DOMAIN,voice-pa.googleapis.com
+DOMAIN,telephony-pa.googleapis.com
 
 # Google 专属电信基础设施域名（严禁走非美区）
-DOMAIN-SUFFIX, telephony.goog
+DOMAIN-SUFFIX,telephony.goog
 
 # WebRTC 通话音频穿透与 STUN 探测（UDP 语音流）
-DOMAIN-KEYWORD, stun.l.google.com
+DOMAIN-KEYWORD,stun.l.google.com
