@@ -1,1 +1,35 @@
+# ==============================================================================
+# 香港地区 VoWiFi (Wi-Fi Calling) 核心网分流规则库
+# 使用对象：Loon
+# 规则生成：北美豆包
+# ==============================================================================
 
+# ----------------- 1. 香港地区所有运营商全量通配 -----------------
+# 作用：涵盖 MCC 454 下属所有已分配及未来新增的运营商 ePDG 核心网
+DOMAIN-SUFFIX,mcc454.pub.3gppnetwork.org
+
+# ----------------- 2. HKT / CSL / Club Sim -----------------
+# MNC 000: CSL / 1010 传统核心网 (原香港移动通讯网络)
+# DOMAIN,epdg.epc.mnc000.mcc454.pub.3gppnetwork.org
+# MNC 002: HKT / PCCW-HKT 骨干网 (电讯盈科基础承载网)
+# DOMAIN,epdg.epc.mnc002.mcc454.pub.3gppnetwork.org
+# MNC 018: Club Sim 专属网段 (轻量化预付卡与 eSIM 业务核心)
+# DOMAIN,epdg.epc.mnc018.mcc454.pub.3gppnetwork.org
+
+# ----------------- 3. 和记电讯 (3 HK / SoSIM / SUPREME) -----------------
+# MNC 003: 3 HK 后付费主网 (含标准 4G/5G VoWiFi 鉴权网关)
+# DOMAIN,epdg.epc.mnc003.mcc454.pub.3gppnetwork.org
+# MNC 004: SoSIM 专用网关 (百佳/屈臣氏渠道储值卡核心节点)
+# DOMAIN,epdg.epc.mnc004.mcc454.pub.3gppnetwork.org
+# MNC 005: SUPREME 尊贵品牌与商业专用核心网节点
+# DOMAIN,epdg.epc.mnc005.mcc454.pub.3gppnetwork.org
+
+# ----------------- 4. 中国移动香港 (CMHK / CMLink) -----------------
+# MNC 012: CMHK 个人主网 (香港本地月费卡与主干 IMS 注册网关)
+# DOMAIN,epdg.epc.mnc012.mcc454.pub.3gppnetwork.org
+# MNC 013: CMLink 与预付费储值卡 (全球漫游及大湾区跨境专用出口)
+# DOMAIN,epdg.epc.mnc013.mcc454.pub.3gppnetwork.org
+
+# ----------------- 5. 数码通 (SmarTone) -----------------
+# MNC 006: SmarTone 全业务核心网 (含漫游 IKEv2 与 NAT-T 汇聚网关)
+# DOMAIN,epdg.epc.mnc006.mcc454.pub.3gppnetwork.org
