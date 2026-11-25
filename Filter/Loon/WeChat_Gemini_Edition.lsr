@@ -1,5 +1,5 @@
 # WeChat Gemini Edition - Optimized for Overseas Accounts
-# Last Updated: 2026-11-20
+# Last Updated: 2026-11-25
 # Excludes shared QQ/Tencent Video domains (qq.com, gtimg.com, qpic.cn, qlogo.cn)
 # to avoid affecting Mainland QQ & Tencent Video.
 
@@ -29,6 +29,7 @@ DOMAIN-SUFFIX,tenpay.com
 # without touching Mainland Tencent IPs.
 # =======================================================
 IP-CIDR,43.128.0.0/11,no-resolve
+IP-CIDR,43.160.0.0/14,no-resolve
 IP-CIDR,49.51.0.0/16,no-resolve
 IP-CIDR,101.32.0.0/16,no-resolve
 IP-CIDR,101.33.0.0/16,no-resolve
